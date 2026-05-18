@@ -1,0 +1,3218 @@
+[
+  {
+    "sentence_id": 0,
+    "text": "嗯。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 1,
+    "text": "重新开始。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 2,
+    "text": "那个，我给大家大致讲了一下这个这个投影法、压力校正法和改进的压力校正法这个。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 3,
+    "text": "这些误差的这个来源，你怎么看这个它到底应该是多准确，包括这个稳定性的证明。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 4,
+    "text": "当然还有一些类似的其他的办法，我就没有时间讲了。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 5,
+    "text": "像像速度校正法，还有这个consistency splitting，大致都跟这个都都方法不一样，方法不一样，所应用的就是说你用起来这个也不一样，但是这个原理。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 6,
+    "text": "这个你掌握了这一部分以后，那你再去看这个压力校正法呀，还有这个 consistent splitting ，这个你你就这个你你看起来理解起来就会就会比较容易一点。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 7,
+    "text": "那么因为时间关系，我大概就不不讲这么多了。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 8,
+    "text": "那么下面我要讲的就是我现在这个 SAV 和这个 NS 这个东西怎么联合起来。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 9,
+    "text": "怎么联合起来？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 10,
+    "text": "就是说你看，我最开始讲的时候，我不是说我我这个非线性项我希望要显示出来，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 11,
+    "text": "现在我这里这个非线性项我基本上都还是半隐处理，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 12,
+    "text": "我已经线性化了，那是半隐处理，那这个东西在每一步我要解的这个方程还是比较麻烦的。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 13,
+    "text": "那每一步你看我要解，我要。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 14,
+    "text": "我要解这个u y y的这个方程，它是椭它是椭圆型方程，但是但是它这个是变系数的，你看这个这里有变系数，而且它这个它这个所有分量都是由这个东西全耦合在一起，所以解起来还是比较麻烦的，就是你要实际上去这么做的话，解起来还是比较麻烦，那我们通常是通常。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 15,
+    "text": "通常大家这个要想做起来简单是怎么做呢？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 16,
+    "text": "做起来简单，那都是把这个东西还是显示显示处理，这个把这里也还是显示处理，但你显示处理这个这个毛病是什么？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 17,
+    "text": "毛病就是你有要要满足CFL条件，是吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 18,
+    "text": "它这个格式它不能够无条件稳定，它一定要有稳定性条件，就是说你要delta t要小于什么的多少，这个delta x它才会它才会稳定，它才会稳定这个。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 19,
+    "text": "那那现在有没有办法，有没有办法就是说我把这个这个SIV的思想和用到这个X方程上来，使得我这个这个非线性项我给它完全显示处理，我然后还可以。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 20,
+    "text": "我然后还可以这个无条件稳定的，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 21,
+    "text": "那那现在就是说，这个这个假如这个事情能做成，那那就是一件这个很有意思的这个事情，就是我把这个n x方程的非线性项我完全显示处理，那我还要想办法。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 22,
+    "text": "还要想办法这个达到无条件稳定，这种格式以前没有，这么这这么重要。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 23,
+    "text": "那现在我能不能能不能这么搞呢？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 24,
+    "text": "你看我现在这个方程是nx方程，ut加上这个u点乘这个u等于这个。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 25,
+    "text": "嗯。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 26,
+    "text": "对吧这个是应该是方式。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 27,
+    "text": "这个S它它满足它满足这个它满足能量耗散，它满足能量耗散就是推出来这个1/2dt，这个动能u的平方，它就等于这个等于负缪这个。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 28,
+    "text": "它它有这个能量耗散，它有这个能量耗散，但是它不是一个梯度流。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 29,
+    "text": "嗯。",
+    "language": "zh",
+    "emotion": "sad"
+  },
+  {
+    "sentence_id": 30,
+    "text": "它不是一个梯度流，就是我们梯度流是什么？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 31,
+    "text": "梯度流是从从一个自由能出发，那么它我们有一个标准方程，对不对？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 32,
+    "text": "我们的标准梯度流方程是什么？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 33,
+    "text": "d phi d t 等于这个负梯，这。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 34,
+    "text": "就是说这个方程它不是，它它不是一个这个方程，它不是不是从自由能出发的，它是从动量守恒、质量守恒导出来的这个方程，物理定律导出来，它不是从自由能导，所以你这个我们。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 35,
+    "text": "你只要能够写成这种形式，那我们这个S N D算法就是一个菜谱，你就用上去就行，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 36,
+    "text": "就用上去就行了，就可以造成一个显示线性长系数这个方程，，这个这个这个格式就就就很好用。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 37,
+    "text": "但是现在这个东西不是一个这个玩意，就是说你直接套套不上了，那。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 38,
+    "text": "那想办法，这个我我怎么怎么去把这个东西用上去？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 39,
+    "text": "那么用上去现在这个就是有一个这个这个思想，这个SIV的这个思想可以可以想办法把它用到这个上面。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 40,
+    "text": "这个思想是什么玩意？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 41,
+    "text": "就是我把这个方程，你看这个SIV，这个实际上就是这个缪。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 42,
+    "text": "是等于这个，我我不是引进了个这个嘛，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 43,
+    "text": "引进了个谬等于再来一个的y，然后假如这个一是这个，这个是是是这种形式的话。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 44,
+    "text": "是这种形式的话，话我们不是就是负的拉普拉斯斐，然后加上这个f一撇斐，对不对？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 45,
+    "text": "然后要对个s n k的思想，就是说我这里引进一个引进一个这个东西，然后。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 46,
+    "text": "然后我这个令rp就等于它，然后我在这个前面乘上一个这个恒等于一的这个东西，在这个非线项前面存在一个恒等于一的这个东西，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 47,
+    "text": "所以这个这是这是这个SIV的这个最主要的这个思想，就是我引进了一个辅助变量，那我现在我也想办法把这个思想要带到这个要带到这个里头来，那带到这个里头来，但是。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 48,
+    "text": "但是我没有，我现在没有能量，我现在没有能量。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 49,
+    "text": "那你看这里面我做的一件事情是什么呢？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 50,
+    "text": "我就在这个非线性项前面做了一件这个事情，非线性前面做的这个事情。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 51,
+    "text": "那我现在也也同样的做，我也在这里这个非线性项前面做这个事情。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 52,
+    "text": "可以吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 53,
+    "text": "可以做这个事情，那就是说我也可以引进一个，我也我也可以引进一个 r t，它等于这个。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 54,
+    "text": "那现在这个能量是什么？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 55,
+    "text": "现在这个我只有这么一个这个能量，我只有一个这个能量，我我这个 r t 就让它等于这个。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 56,
+    "text": "加上任意一个常数，，叫它大于零就行。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 57,
+    "text": "嗯，随便加上一个常数，我令 r t 就等于这个。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 58,
+    "text": "然后。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 59,
+    "text": "然后我把这个方程改写，，我把这个方程改写，我这个 u t，我就加上这个 r t，除上这个根号。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 60,
+    "text": "1/2 u 的平方，这个这个常数加不加都无所谓，然后这里是 u，归零点 u 等于。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 61,
+    "text": "记住，这个SAB，你看SAB我都是先把这个连续方程改写，然后再去离散，所以这里我要想办法先把连续方程给它找出个等价形式，然后再来改写。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 62,
+    "text": "这个等号就是u等于零。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 63,
+    "text": "然后我要一个r的方程，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 64,
+    "text": "我要一个r的方程，这个r的方程，我现在我大概，我我把它写成r的平方，大概更方便一点，无所谓，你写成r也行。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 65,
+    "text": "写成r的平方，，写成r的平方，那我就对r两边对r求导数，这是二r r t，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 66,
+    "text": "两边对r求导，乘二r t就等于。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 67,
+    "text": "这个这个u乘上ut。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 68,
+    "text": "那就等于这个。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 69,
+    "text": "那u乘上u t，这个ok，这个就是u乘上u t，那这个方程就是这样子，是吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 70,
+    "text": "这个方程就是这样，我我把它写成内积的形式。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 71,
+    "text": "嗯，这这内积的形式就是就是就是这样子，但是这样子你会发现这个。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 72,
+    "text": "这个毛病在哪里？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 73,
+    "text": "就是我假如用这个东西的话，我假如用这个东西的话，我要去离散，我要去离散的话，那你发现我这个非线性项这个东西消不掉。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 74,
+    "text": "你你发现没有？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 75,
+    "text": "我们原来做这个S N P的时候是。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 76,
+    "text": "这个一个方程，然后如果 R 里面还得要有这个东西，它两个加起来一起才消掉。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 77,
+    "text": "你现在这个里面没有这个东西，怎么消掉？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 78,
+    "text": "消不掉，消不掉，那所以我要想办法把这个东西也引进到这个 R 的方程里面去。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 79,
+    "text": "那引进到 R 的方程里面去，怎么引进呢？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 80,
+    "text": "我这里写成 u t ，u t u 和 u 和 u t 有个，这 u t u，那么这个东西我怎么引进呢？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 81,
+    "text": "我要我要把这我要把这项给它引进来，我要把这项给它引进来，那怎么引进？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 82,
+    "text": "这个有。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 83,
+    "text": "这个 u t，然后我加上，你看我加上这个 u 乘上亏一点 u。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 84,
+    "text": "可以吧，因为这个又存在规定，u和u转内积是等于零的，这个这个重要的式子一定要记住。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 85,
+    "text": "就是这个非线性项它对能量没有贡献，所以我给它加进去嘛。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 86,
+    "text": "这个东西就是一个数，这个数我随便乘上去总可以吧，它现在是等于一的，就我总是可以把它乘上去。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 87,
+    "text": "OK，那这个方程还是和这个方程是等价，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 88,
+    "text": "这个方程还是和这个方程是等价。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 89,
+    "text": "那下面我就要对这个方程去做离散，我对这个方程去做离散。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 90,
+    "text": "所以这样子一个方程，它是这个不是一个，它不是一个梯度流，但是我还是把它写成了这个，把它写成了这个。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 91,
+    "text": "这个这个引进了一个这个辅助变量，引进了一个S I D，然后然后我看看我能不能得到一个什么好的效果。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 92,
+    "text": "我能不能得到一个什么好的效果？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 93,
+    "text": "那我现在先先做一个简单的格式，先对这个做一个简单的格式怎么做？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 94,
+    "text": "就是我现在对这个离散，OK，现在这个离散呢，我怎么说？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 95,
+    "text": "我先先简单的，一阶格式，加上这个r的n加一，一定这里。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 96,
+    "text": "嗯。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 97,
+    "text": "u的n加一的，u u的这个，ok，这个先不管它。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 98,
+    "text": "u的n加一或者u n的平方，我先把先把它写成u的n加一的平方好吧。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 99,
+    "text": "然后这里是我这个地方，我是我的目的是要这个东西要显示出来，这是我的目的，这个地方要显示出来。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 100,
+    "text": "哦，给地。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 101,
+    "text": "刚开始第一步我先做这个，我先做耦合的格式，我先做耦合，这里我先用pn加一，然后这个德尔塔就是un加一，我第一步先考虑这个格式，un加一等于，先考虑这个格式。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 102,
+    "text": "OK，这个跟原来的我们SMB做，，当然还有还有这里，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 103,
+    "text": "这里是这个Rn加一，然后然后Rn加一减掉Rn，加点t，两倍的，等于等于这个等于这个东西和这个玩意，这里是这个。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 104,
+    "text": "是是，九安。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 105,
+    "text": "u n加一减掉u n带的t。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 106,
+    "text": "加上这个u n减乘u n，然后这里这个同样的东西，然后n加一，根号。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 107,
+    "text": "It's.",
+    "language": "en",
+    "emotion": "sad"
+  },
+  {
+    "sentence_id": 108,
+    "text": "嗯，这个东西和U N加一处理器。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 109,
+    "text": "OK，我先先这个格式，这个格式现在看起来这个problems，这个这个东西它这是非线性的，现在这里这个东西都是非线性的，这里u n加一是非线性，非线性，这里是非线性，先不管它，我我先先弄一个这样的格式。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 110,
+    "text": "那我首先想要考虑的是这个格式，是不是是不是有能量，是不是有能量稳定性，我是我我待会再来考虑我怎么去解，先看一下这个格式是不是有能量稳定性。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 111,
+    "text": "能量稳定性的话，我我是怎么证的？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 112,
+    "text": "能量稳定性，我当然是就对这个乘上u n加一了，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 113,
+    "text": "乘上u n加一，那。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 114,
+    "text": "这个乘上一n加一，然后这里什么也不用乘，这已经都都该有的都有了，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 115,
+    "text": "都都不用乘，就第一个乘上一n加一，这就得出这个。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 116,
+    "text": "嗯。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 117,
+    "text": "u n加一的平方减掉u n的平方，加上这个u n加一减掉u n的平方，然后这个一串，这一串。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 118,
+    "text": "我把这两个东西加起来，这个一个加和这个加起来，这一串和这一串消掉是吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 119,
+    "text": "消掉，所以所以这是为什么一定我在这个第二个后面要加的这个，我要把它消掉，要不然我消不掉，就这个东西和这个消掉就没有了，然后。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 120,
+    "text": "然后加上这个缪，这个 gradient u n 加一的平方，然后这个东西等于零对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 121,
+    "text": "它因为导数就是因为加1=0，它等于零，没有了。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 122,
+    "text": "然后就是剩下这个，就加到这一项。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 123,
+    "text": "哦，这都没有，这个东西和这个东西和这个和这个消掉了对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 124,
+    "text": "这个没有什么东西都没有了，全都消掉了，全都消掉了，这个东西没有了，所以只剩下这一项，这一项是什么玩意？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 125,
+    "text": "这一项就是这个一除上这个德尔塔t，这个R n加一的平方减掉R n的平方，加上这个R n加一减R n的平方。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 126,
+    "text": "嗯，对。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 127,
+    "text": "就是这儿。",
+    "language": "zh",
+    "emotion": "angry"
+  },
+  {
+    "sentence_id": 128,
+    "text": "就是这样，那这马上就得出这个它是能量稳定的没有问题，是吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 129,
+    "text": "能量稳定的问题，它是它的这个能量现在就变成了它的能量是什么？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 130,
+    "text": "它的能量现在就是这个r n加一的平方，那r n加一的平方怎么玩？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 131,
+    "text": "r n加一的平方就是就是原来的这个这个能量，所以所以对头是吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 132,
+    "text": "所以你马上就得出它是能量稳定的。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 133,
+    "text": "能量稳定没有问题，那么问题在哪里？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 134,
+    "text": "问题是现在我怎么去解这个东西？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 135,
+    "text": "问题是我怎么去解这个东西？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 136,
+    "text": "现在这是一个非线性的玩意，问题说怎么去解这个东西。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 137,
+    "text": "写这个东西，就是你看这一大串，这一大串这个玩意儿很复杂，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 138,
+    "text": "那我给他一个。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 139,
+    "text": "我不不去解r，也不去解什么un加一什么这个这个玩意儿，我就让它是一个数，这个我给它给它一个名字叫做sn加一，可以吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 140,
+    "text": "可以，然后我把这个我把所有的这个变量都用这个s展开，给它写成线性展开，我令。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 141,
+    "text": "这个u n加一等于这个u一n加一，加上这个s n加一的这个u二n加一，这个p n。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 142,
+    "text": "n加一等于u二，n加一，p一，n加一。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 143,
+    "text": "加上s n加一的p二n加一。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 144,
+    "text": "OK，我这样子做，我这样子做总可以吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 145,
+    "text": "我令这个东西能够把它带到这个带到方程里面去，我把它，等会儿我跟你讲。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 146,
+    "text": "我呢带到方程里面去，我带到方程里面去，然后把有s和没有s的给它给它分开，那么我马上就得出得出得出什么东西呢？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 147,
+    "text": "第一步这个方程里面我就得出这个u一n加一减掉u一n除上德尔塔t没有s的，是对u一减没有s，所以这个东西这个跟它没有关系，这里。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 148,
+    "text": "出来缪的拉普拉斯U一n加一，加上拐点P一n加一，减上这个这个，然后等会儿就是这个U一n加一等于。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 149,
+    "text": "这第一个方程是这样的，那第二个关于u二呢？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 150,
+    "text": "关于u二，我就有u二的n加一减掉u二n除上德尔塔t，然后加上u，u二就出来了这个东西。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 151,
+    "text": "Yes.",
+    "language": "en",
+    "emotion": "sad"
+  },
+  {
+    "sentence_id": 152,
+    "text": "嗯。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 153,
+    "text": "是吧。",
+    "language": "zh",
+    "emotion": "angry"
+  },
+  {
+    "sentence_id": 154,
+    "text": "就是说我把这个方程就给它分成了分成了两个方程，一个跟s有关，一个跟s没有关系，跟s没有关系就是这个，第二个方程就是它前面都有个s对吧，就是这样的，那这两个方程你看。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 155,
+    "text": "它跟跟这个跟这个跟这个东西没有关系了，我就直接就直接就可以解了，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 156,
+    "text": "这两个方程我就直接就可以解了，这就是我这就是耦合的Stocks方程，这就是一个Genova的Stocks方程，每一步你看每一步解一个解一个耦合的Stocks方程，这是这里是显式处理，所以我这个u一和u二都可以解出来。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 157,
+    "text": "都可以解出来，跟这个东西没有关系。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 158,
+    "text": "现在唯一的要要解的是什么？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 159,
+    "text": "唯一的我不知道的是，唯一的我不知道是这个玩意。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 160,
+    "text": "我要知道这个，我什么都什么都解决了，是吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 161,
+    "text": "那现在我看，我这个东西我要从哪里导出来？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 162,
+    "text": "这个东西我要从这里导出来。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 163,
+    "text": "这个东西我要从这里导出来，这个东从东西从这里导出来，那就是现在我把所有的东西都搞进去，我我怎么得出这是这是什么玩意？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 164,
+    "text": "OK，这个S是什么意思？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 165,
+    "text": "这个S是。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 166,
+    "text": "所以你现在就把它都都放进去，那就得出来是什么东西？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 167,
+    "text": "这里，我要这里这个是s，然后。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 168,
+    "text": "哦，r n加一是这里，r n加一你看，要要要把这个r n加一是，r n加一是等于，r n加一是r n加一的平方，所以r n加一的平方就等于这个1/2，这个u一的n加一加上s一的n加一，加上s n加一u二。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 169,
+    "text": "n加一的这个平方，常数不管它，加上这个把这个n加一的平方。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 170,
+    "text": "OK，你把这个东西带进去，这个u n加一你把它用这个带进去，这里这里导出来的就是一个什么东西？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 171,
+    "text": "导出来一个s的一个代数方程，是吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 172,
+    "text": "导出来的就是s的一个代数方程。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 173,
+    "text": "这个导出来这个s是一个几几阶的代数方程组那个？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 174,
+    "text": "那你为就是导出来就是S的一个代数方程组，我看这个代数方程组怎么写。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 175,
+    "text": "这里，这里平方是这个玩意儿，然后这这里问题是这里还有一个单个的，单个的，哦，这里还有一个单个，哦，这里没有，这里就是一个s，哦，对，R等于这个。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 176,
+    "text": "哎，李伟，哎，你把这个东西，你把你把这个东西带到这里面就推出一个，这个S object带出来。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 177,
+    "text": "就就是就是一个这个就是一个代数方程，它是代数方程，大概是三阶方程组。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 178,
+    "text": "就就就推出这个，就推出这个大概是s立方加上这个阿尔法s平方加上贝塔s加上伽马等于零的一个这样子。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 179,
+    "text": "一个一个这样子的这个n加一，这当然是都是n加一了，对s n加一的一个一个立方，一个一个一个三阶方程。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 180,
+    "text": "一个三阶方程组，那那这个当然你就你就直接就可以算出来，这算出来你取一个取一个实数的解，就这就可以算。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 181,
+    "text": "当然这里还还有一些这个还有一些这个理论的问题，，你有几个解，你到底取哪一个，什么玩意，这这这个需要需要讨论的，但是。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 182,
+    "text": "但是理论上来讲，你现在这个格式就非常简单，也非常好算，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 183,
+    "text": "我怎么解？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 184,
+    "text": "我第一步解一个这个，再解一个这个，就是把这个东西解两次，然后。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 185,
+    "text": "然后从这里导出一个这个这个代数方程组，代数方程组你用公式一算，你把这个s算出来，把s算出来取，那s算出来了以后，这个东西就有。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 186,
+    "text": "就就可以走到下一步，就可以往下一步走，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 187,
+    "text": "那这个格式你看，这就是第一个这种格式，可以是对非线性项完全显示处理，我还无条件能量稳定。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 188,
+    "text": "现在就就就出来了一个这样子非常有意思的格式，非常有意思。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 189,
+    "text": "你原来你假如做的时候要对这个东西要要要对这个东西要要做这个。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 190,
+    "text": "要要要显示处理的话，那你一定要有这个 CFL 条件，它才会它它才会这个稳定。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 191,
+    "text": "现在我不要 CFL 条件，我也可以无条件的。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 192,
+    "text": "OK，那下面自然而然的想法就是，我这里要解的是要解的是这个耦合的方程组，要解耦合的方程，那自然的想法就是说我可不可以把它解耦？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 193,
+    "text": "是吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 194,
+    "text": "因为我们不希望我们刚刚前面花了昨天花了一天的时间，今天花了上半堂课的时间讲各种各样的方法，怎么去怎么不去解这个耦合的 stocks ，怎么去解八双板子这些。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 195,
+    "text": "那现在我们可可不可以把这个格式构它构造成一个就解八双板子的，那我们就试一试看，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 196,
+    "text": "我们就试一试看，这个要试试看怎么试呢？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 197,
+    "text": "就是这里。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 198,
+    "text": "我要用这个，我我要用显示对不对？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 199,
+    "text": "要用显示，那这里这个东西就没有了，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 200,
+    "text": "这个这个w就就不能等于零，w就不能等于零，那我这里还是要一弯弯，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 201,
+    "text": "还是要一弯弯，这里还是要一弯弯。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 202,
+    "text": "对吧，看到没有？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 203,
+    "text": "那我要做一个第二步，我要做一个校正。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 204,
+    "text": "第二步我要做一个校正，u n加一减掉u q的n加一，除上德尔塔t，加上这个拐点p n加一减掉p n等于零。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 205,
+    "text": "然后这个拐点是这个u n加1=0。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 206,
+    "text": "所以现在我这里是一，这里是二。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 207,
+    "text": "对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 208,
+    "text": "这是这前面我就可以这么做，那现在第三步怎么做？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 209,
+    "text": "第三步，第三步怎么做？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 210,
+    "text": "第三步，你看我要想证明这个能量稳定性，我这个东西要怎么改？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 211,
+    "text": "我这个要怎么改？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 212,
+    "text": "我要想这个东西，因为这个东西要和这个东西消掉，所以我这里一定是要u y y n加一，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 213,
+    "text": "我这里u y y n加一，然后我这个东西要消掉，所以这里要做内积，我要我跟u y y做内积，我跟u y y做内积。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 214,
+    "text": "那看看这个东西行得通行不通。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 215,
+    "text": "这个不不不是那么，不是那么简单就就弄定了。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 216,
+    "text": "那个，所以先先试试看，先试试看什么东西不通。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 217,
+    "text": "这个东西和它做内积，，出来了这一项。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 218,
+    "text": "这个东西和它做内积，这个东西消掉了，这里也消掉了，但是问题你这个怎么办？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 219,
+    "text": "你你你这个搞不定对吧？",
+    "language": "zh",
+    "emotion": "angry"
+  },
+  {
+    "sentence_id": 220,
+    "text": "所以你这个搞不定，所以这样子这样子简单粗暴这个不行。",
+    "language": "zh",
+    "emotion": "angry"
+  },
+  {
+    "sentence_id": 221,
+    "text": "Here it goes.",
+    "language": "en",
+    "emotion": "sad"
+  },
+  {
+    "sentence_id": 222,
+    "text": "所以这个东西，所以这里是这个东西要怎么处理？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 223,
+    "text": "这里要怎么处理？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 224,
+    "text": "这里要怎么处理？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 225,
+    "text": "这里要怎么处理？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 226,
+    "text": "OK，这个东西要怎么处理？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 227,
+    "text": "你看这个毛病是，OK，你看这个第二部分，第二部分我还是跟刚刚一样的动，你，我我先做看看需要什么东西。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 228,
+    "text": "那个这个造格式的时候就是你，你就先试一下，它不行了你就想怎么改这件事情才能把它改通。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 229,
+    "text": "那你先看一下你你会你会遇到什么问题。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 230,
+    "text": "这个东西OK，这步和这个东西做进去。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 231,
+    "text": "第二步，第二步是两边平方，第二步两边平方是出来这个u n加一的这个平方加上这个德尔塔t的平方。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 232,
+    "text": "规定 p n 的平方等于这个 u n 加一 q 的平方加上，这里要是乘上两倍，加上这个两倍的加点 p，这个规定 p n，这个 p ，u n 加一。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 233,
+    "text": "加上这个t的平方，这是pn的平方。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 234,
+    "text": "这个第二个方程出来这个，这一项你是这个你肯定要这么做的，因为你要要和这项给它消掉是吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 235,
+    "text": "要和这项给它消掉，所以它这个东西是一定要这么做的，但是这样子做出来了以后。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 236,
+    "text": "你你你假如这样子的话，那它整个都消掉了，没有，这两个东西你不知道怎么控制的，这两个东西不知道怎么控制的，所以你看这两个东西你要想控制的话。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 237,
+    "text": "你，你，你要想把它搞掉的话，那你那你怎么办？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 238,
+    "text": "你就你看看这两个东西想出来也简单呐，这个东西不就是什么？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 239,
+    "text": "不就是U n加一减掉U t的n加一嘛，和和什么东西做内积？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 240,
+    "text": "就是说我假如我把这个东西我写成这个样子，我用U n加一减U n除上德尔塔 t。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 241,
+    "text": "我用这样子，然后我把这个分成两部分，u n加一减掉u q的n加一。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 242,
+    "text": "加上这个u q的n加一，减掉u n除上德尔塔 t。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 243,
+    "text": "OK，首先，首先你你不管你怎么做，你一定要是可生产的，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 244,
+    "text": "一定要它是它不不损失精度。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 245,
+    "text": "你看你这里取 u 贴的 n 加一，u n 加一，它都是一样的，精度都是一样的，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 246,
+    "text": "所以你这里你可以取 u n 加一，你取 u n 加一，那现在你还想这个东西和这个东西要消掉，那你把它分成两部分。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 247,
+    "text": "这个和这个消掉了对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 248,
+    "text": "这个和这个做内积和前面的消掉，剩下的这个和这个做内积刚好会出来，刚好会出来这个东西。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 249,
+    "text": "但是符号是不是对现在还不知道，那我们看一下符号对不对，那个。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 250,
+    "text": "你这个和这个状态机，这个这个东西，然后最后你把它搞在一起，出来个什么玩意儿？。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 251,
+    "text": "嗯。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 252,
+    "text": "我这里要出账。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 253,
+    "text": "这个要除上这个玩意，对不对？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 254,
+    "text": "然后再加上这个东西，最后我得出来的东西是什么？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 255,
+    "text": "最后我得出来的东西，第一部分剩下的，第一部分剩下的就是缪 gradient u theta n加一的平方，这是第一部分剩下，这个东西和和这里消掉了。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 256,
+    "text": "那第二个部分还剩下的东西是什么玩意？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 257,
+    "text": "剩下的是。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 258,
+    "text": "一除上二德尔塔t，这个u n加一平方减掉u贴的n加一的平方，然后还有这个东西对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 259,
+    "text": "这个东西是德尔塔t除上二，这个微点偏加一次平均。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 260,
+    "text": "P n加一平方减掉gradient p n的平方。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 261,
+    "text": "OK，这是前面两项出来的是这个东西，然后第三项和第三项出来的是，第三项出来的是这个玩意一除上德尔塔 t，这个 R n 加一的平方减掉 R n 的平方，加上这个 R n 加一减 R n 的平方。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 262,
+    "text": "，这个和这个东西消掉了，这个和这个消掉了，还剩下这个和这个，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 263,
+    "text": "还剩下这个和这个，这个和这个在右端，在右端，所以它出来一除上二分之德尔塔 t，然后。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 264,
+    "text": "这个东西在右端，你把它放到左端去，在右端是u n加一减上u q的n加一，你把它放到左端就是u q的n加一减掉u n加一，所以你把它放到左端的话，你把它放到左端的话就是。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 265,
+    "text": "u q的 n 加一减掉 u n 加一，所以这个出出来 u q 的 n 加一的平方减掉这个 u n 加一的平方，加上这个 u q 的 n 加一减上 u n 加一的平方等于零，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 266,
+    "text": "最后就变成了这个。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 267,
+    "text": "那现在看看是不是刚好了。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 268,
+    "text": "这两个这个东西和这个东西刚好。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 269,
+    "text": "Shut up.",
+    "language": "en",
+    "emotion": "angry"
+  },
+  {
+    "sentence_id": 270,
+    "text": "是吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 271,
+    "text": "这个东西刚好消掉了。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 272,
+    "text": "这不是刚生，所以所以你稳定性就有了，是吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 273,
+    "text": "那就稳定性就有了。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 274,
+    "text": "OK，那你看现在这个格式，这个格式怎么解？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 275,
+    "text": "这个格式怎么解？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 276,
+    "text": "你跟刚刚一样的，对不对？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 277,
+    "text": "这个格式怎么解？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 278,
+    "text": "现在稳定性有了，现在稳定性有了，下面我们要关心的只是只是怎么解，就这个稳定性有了。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 279,
+    "text": "Hmm.",
+    "language": "en",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 280,
+    "text": "嗯。",
+    "language": "zh",
+    "emotion": "angry"
+  },
+  {
+    "sentence_id": 281,
+    "text": "你取这个，你取这个，令这个 u 调到 n 加一，等于 u 一调到 n 加一，加上这个 s n 加一，u 二调到 n 加一，跟刚刚一样，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 282,
+    "text": "然后u n加一等于u一n加一，加上s n加一，这个u二n加一。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 283,
+    "text": "然后p n加一等于p一n加一，加上这个s n加一，p二n加一。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 284,
+    "text": "你把它全用这个s给它线性展开，然后把它带到带到这第一个方程和第二个方程里面去，带到第一个方程和第二个方程里面去，把没和s没有关系的设成零，和s有关系的也是一个方程设成零，就得出两个方程，第一个方程。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 285,
+    "text": "两两个系列嘛，第一个就是u一的n加一y减掉u n，这个叫p，这一项就没有了。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 286,
+    "text": "等于缪拉普拉斯的u一y n加一减掉规定p n，这是第一个方程。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 287,
+    "text": "那么第二个方程。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 288,
+    "text": "第二个方程就是就是u二n加一减掉u二n，，没，我那个那个意思。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 289,
+    "text": "就是没有第二个，我前面那个也写错了，前面这就没有没有u n了，就是u二q的n加一除上德尔塔t，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 290,
+    "text": "没有没有s，前面那个前面那个也这个第二步也是没有s，这个没有也是没有u没有u n的，所以刚刚那个要改一下哈，所以这个也没有s。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 291,
+    "text": "然后这里是加上这个u n，这再推一遍u n就等于缪拉帕斯的u二n加一的theta。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 292,
+    "text": "就完了，这里因为这个鬼点 P N 已经已经在这里了，它这里也没有 S。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 293,
+    "text": "刚刚刚刚那一步要改一下，这个刚刚那个格式要要向上子改一下，这里也没有 U，这里也没有 U N，这里也没有 P N，就是就是这样的一个简单的嘛，这是第二个。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 294,
+    "text": "那么那么 P 一 P 二是什么东西？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 295,
+    "text": "p一p二就是这里就是u减掉u一跳转的n加一除上德尔塔t，加上 gradient p一的n加一减掉pn等于零。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 296,
+    "text": "divergence u一 n加1=0。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 297,
+    "text": "然后第二个这个方程就是p，嗯，u二n加一减掉u二q的n加一除上德尔塔t，加上gradient p二n加1=0，改过就是这个u二。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 298,
+    "text": "对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 299,
+    "text": "就是就是你要解你要解两个，就等于你要解两两个两套系统。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 300,
+    "text": "第一套解这个，第二套解这个。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 301,
+    "text": "他们每一步都是什么？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 302,
+    "text": "每全部都是泡松方程。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 303,
+    "text": "这是泡松方程对u一y的，这是也是泡松方程对对p一的，对p一的，这是。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 304,
+    "text": "这是抛射方程，对U二弯的，这也是抛射方程，解四个抛射方程。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 305,
+    "text": "算了，算了。",
+    "language": "zh",
+    "emotion": "sad"
+  },
+  {
+    "sentence_id": 306,
+    "text": "解完了以后，你这个这个u都知这个，然后然后你把这个东西带到这里头，同样推出一个这个s可保。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 307,
+    "text": "然后，借这个减完了以后，再你退出。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 308,
+    "text": "嗯。",
+    "language": "zh",
+    "emotion": "sad"
+  },
+  {
+    "sentence_id": 309,
+    "text": "嗯。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 310,
+    "text": "你看看。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 311,
+    "text": "对。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 312,
+    "text": "所以这个格式就就就就非常的有意思，这个格式就非常的有意思。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 313,
+    "text": "嗯。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 314,
+    "text": "OK，那个，所以这个是一阶格式，那你下面要构造这个二阶格式，你怎么构造？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 315,
+    "text": "你要想构造这个二阶格式，你要想构造这个二阶格式的话，。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 316,
+    "text": "给大家一个习题。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 317,
+    "text": "这个构造一个二阶格式。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 318,
+    "text": "OK，就是你这里，你这里想办法，这里把它换成二阶，这里换成二阶，这两个地方不要动，这两个地方我们我们刚刚说了，这个一动证明不了，所以这这两个地方不动，这个这些地方你想办法把它换成二阶。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 319,
+    "text": "怎么弄一弄，怎么想办法，这个这个这里要想办法弄一弄，怎么搞成这个格式还是还是可以这个无条件稳定的，大家可以试一下那个。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 320,
+    "text": "OK，所以这个是把这个SIV的思想和这个NS方程的思想搞在一起，你就可以构造出一个这个构造出一个非常有意思的这种东西。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 321,
+    "text": "那么现在下面你就可以，这下面就有很多这个研究课题可以做了。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 322,
+    "text": "这个我NS方程可以这么做，我其他的方程是不是也可以这么做？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 323,
+    "text": "其他的方程像什么方程呢？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 324,
+    "text": "你比方说就是说你要找的方程它不是梯度流，它是梯度流的话，这个就本身简单了，S A D直接就可以做。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 325,
+    "text": "它不是梯度流，但是它要有它要有耗散性质，它要有耗散性质，它是有非线性。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 326,
+    "text": "是吧，那这种方程就就有很多了，是吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 327,
+    "text": "这种方程就有很多，那这些东西都是都是可以做的这个都是可以做的研究课题。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 328,
+    "text": "磁流体方程呢，就是说你什么东西你你把这个，你可以把各种各样的非线性都加进去，如果你或者是你这个做研究的时候，老师给你的题目里面牵涉到什么类似的问题，这种思想都可以都可以想办法套上去。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 329,
+    "text": "这个我们就就就。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 330,
+    "text": "就是就是你自己要自己要领会，然后看看怎么样把这些技巧可以用到你自己要想做的这个问题上去。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 331,
+    "text": "所以这是这是N S方程，那么下面。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 332,
+    "text": "我们要讲的就是这个，OK，下面下面我们就讲一下两相流，两相流的这个相场模型。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 333,
+    "text": "嗯。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 334,
+    "text": "嗯嗯。",
+    "language": "zh",
+    "emotion": "sad"
+  },
+  {
+    "sentence_id": 335,
+    "text": "就是我们我们前面这两个课牵涉的都是都是牛顿流体，，都是简单的牛顿流体，就是说要么是水，要么是油，要么是空气，都是都是牛顿流体。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 336,
+    "text": "那么现在就是说这个这个这个我们这个现在这个做研究，经常碰到的不是这么个简单的这个牛顿流体，经常是混合流体。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 337,
+    "text": "，那混合流体就好比说你有两种东西，两种流体混合在一起，我两种流，我现在简单的情况，两种牛顿流体混合在一起，我假设这两种牛顿牛顿流它是不可，它它是互相排斥的，它是好比说水和油，水和油，它这个化学性质不会混合在一起，不会不会水变成油，油变成水，没有相变，我先考虑这种简单的情况，这个就是。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 338,
+    "text": "就是这这这这是两个不可压流，这个不可混合的不可压流混合在一起，那么我怎么去模拟它？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 339,
+    "text": "怎么去模拟它？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 340,
+    "text": "你看，你把这个一滴油滴在水里面，它就会它就会它就会随它就会这个随着这个水的流动，它也会流动，那你怎么去？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 341,
+    "text": "你你假如要想要想知道这个在任意时刻这个油滴在什么地方，那你怎么怎么列这个方程？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 342,
+    "text": "怎么去追踪这个这个油滴呢？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 343,
+    "text": "这就是这就是非常困难的事情，这个非常非常困难的事情。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 344,
+    "text": "那以前的这个一种方法就是说我去这个界面追踪，我每一步我都去追踪它一些什么界面条件，这样子搞起来非常复杂那个。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 345,
+    "text": "那现在就是说你用这个相场模型，就是说可以就是有一个比较这个比较简单的这个办法来模拟这件事情。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 346,
+    "text": "那比较简单办法模拟这件事情就是说我引进一个引进一个指标函数，我让它等于等于这个一，它就是好比说就是这个fluid one就是油。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 347,
+    "text": "，我等于负一就是free的two。，",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 348,
+    "text": "我我我我初始的情况我知道油在哪里，水在哪里，我就可以有这么一个有有这么一个，我就可以设定一个指标函数，让它让它在这个是油的时候是一，是水的时候就是负一。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 349,
+    "text": "好，你说吧，这样子，但是这样子的话我是一个间断函数，是吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 350,
+    "text": "是个间断函数，那个处理起来不方便，所以我希望这个。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 351,
+    "text": "这个我就是把这个间断函数给它光滑化。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 352,
+    "text": "Hmm.",
+    "language": "en",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 353,
+    "text": "就是我希望它有一个，它中间呢。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 354,
+    "text": "对。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 355,
+    "text": "好比说，这这样这样，一维的情况下，我就一维的情况下，就是就是说我假如这里是水，这里是油，，那么中间我就用一个用一个光滑的函数把它连起来，光滑的函数连起来，那么这个这个这个这这就有一个边界层，这个边界层的这个厚度。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 356,
+    "text": "边界层的厚度我要让它是这个很很薄，我让它很薄，是吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 357,
+    "text": "我让它让它很薄。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 358,
+    "text": "所以这是这是我的这个出发点。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 359,
+    "text": "这是我的出发点。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 360,
+    "text": "那下面你看，我假如我知道了，我假如我知道这个斐在每一时刻，我知道这个函数在每一时刻，那我我就知道我这个油在哪里，每一时刻油在哪里，我就不用去追踪了。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 361,
+    "text": "所以在在在每一个时刻，我想知道这个油在哪里，我就找它的这个水平集，我就令斐等于一，把它水平集画出来。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 362,
+    "text": "我就知道这个u d在这个界面是怎么回事就知道了，是吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 363,
+    "text": "或者这种情况就是y等于零，这这这个这个界面就就是就是y，y等于零就是它的水平，这个水平就就就是它的界面，界面在哪里就就知道了。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 364,
+    "text": "所以我现在只要我需要一个方程，我需要一个方程去。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 365,
+    "text": "去描述这个这个快的运动，那么这个快的需要一个方式去描述快的运动，那用什么方式去描述快的运动呢？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 366,
+    "text": "我用什么这个方程去描述它这个斐，它这个斐是是被这个流体的速度所所传输的，是吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 367,
+    "text": "所以这个斐t它一定是被流流体的这个速度所，所以这个斐的这个。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 368,
+    "text": "这个phi的这个方程呢，它是它是一个输运方程，它应该满足一个输运方。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 369,
+    "text": "这个u是u是这个流体的速度，有了这个以后，我就把这个整个的这个流场用一个速度来表示，我不管它是是第一是油的，是油还好，是水还好，它只要在哪一点，我就是它就是一个速度场，，它就是个速度场，我不。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 370,
+    "text": "我不用去分，在第一个区域的速度，在第二个区域的速度，我就是就用一个速度来表示。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 371,
+    "text": "那么它的这个范儿应该被速度被这个被被这个东西来来传输。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 372,
+    "text": "但是这个这用这个方程去做的话。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 373,
+    "text": "毛病很多，用这个方程去做的话，毛病很多。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 374,
+    "text": "它最大的毛病什么？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 375,
+    "text": "最大的毛病就是就是就是说你这个你刚开始的时候是这样子一个东西，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 376,
+    "text": "是这样子一个东西，然后你一个速度，你速度一传输它的话。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 377,
+    "text": "他很可能就变成了，他这这一个速度搞过来，一个一个速度的话，这个一个任务，他他很可能这个这个孩子就变成，就变成了这个样子。",
+    "language": "zh",
+    "emotion": "angry"
+  },
+  {
+    "sentence_id": 378,
+    "text": "就是说，变成了这个样子，这个界面就不清晰了，这界面这到底是哪个是油，哪个是水？",
+    "language": "zh",
+    "emotion": "angry"
+  },
+  {
+    "sentence_id": 379,
+    "text": "你不知道，你不知道哪个是圆哪个是矩。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 380,
+    "text": "所以，所以这个，这个这种，就是用这种方法去做的有有这个叫叫叫这个sharp interface，叫sharp interface方法或者level set的方法，都是从这个水平集方法都从这个方面出发。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 381,
+    "text": "从这个方式出发，它有很多它有很多毛病在，它的毛病就是说。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 382,
+    "text": "这个走着走着，他就不清楚界面在哪里，然后他又得重新来一次，那就重新启动一次，我把这个界面搞出来，我又重新启动一次，走两步又重新来一次。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 383,
+    "text": "所以这个水平集，你看他画出来这个图，水平集方面看画成图，他可以画的很漂亮，但是叫他去和这个实验去相比，好。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 384,
+    "text": "好，他一般做不到，他他做这个做做动画电影可以做的非常好，但是要做拿它来做这个拿它来做这个做这个流体力学做做这个做做科学的话，这个你就要需要很高的技巧。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 385,
+    "text": "然后反正里面有很多这个说不清道白的这个技巧在里面，说不定你能搞出一点名堂来，但是但是没有一个没有一个很好的数学基础，这个。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 386,
+    "text": "所以这是一大类的方法，就是去从这个方面出发。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 387,
+    "text": "另外一大类的这个这个办法就叫就叫所谓的diffuse应力分析。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 388,
+    "text": "这个是消费的，这是这是消费的。",
+    "language": "zh",
+    "emotion": "angry"
+  },
+  {
+    "sentence_id": 389,
+    "text": "这个下边的分析方法就都是从这个都是从这个东西出发的，这个diffusing的分析方法。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 390,
+    "text": "和这个face field又叫face field。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 391,
+    "text": "又叫face field，那么就是说我我不用，我用一个梯度流来，来来来来表示这个它的这个它的这个传输性质。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 392,
+    "text": "就是说我从一个能量出发，我从一个能量出发，我引进一个能量，我引进一个能量是什么东西呢？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 393,
+    "text": "这个这个能量就是。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 394,
+    "text": "就是我们这个前面一直说的这个能量。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 395,
+    "text": "好，那你这里这是个f二，这个f二就。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 396,
+    "text": "要放，就让他，这个事放放这。",
+    "language": "zh",
+    "emotion": "sad"
+  },
+  {
+    "sentence_id": 397,
+    "text": "就是双体势能。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 398,
+    "text": "那么这个能量什么意思？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 399,
+    "text": "这个能量就是这就是混合能。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 400,
+    "text": "那么在前面再加个加个这个就就是引进一个mixed energy，混合能。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 401,
+    "text": "这个混合呢，就是说说明什么意思？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 402,
+    "text": "这一项就是说我这个流体希望混合在一起，希望归列斐等于零，归列等于零就斐就是一个常数，它所有的混合在一起。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 403,
+    "text": "但是这一部分的能量你看，它就希望要么是一，要么是负一，它它不希望混合在一起。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 404,
+    "text": "那么它的这个它的这个平衡态呢？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 405,
+    "text": "就是把它就是这个样子，平衡态就是刚好是，它是要么是一，要么是负一，要么中间有一个有有有一个这个有有一个这个位移。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 406,
+    "text": "那么这个东西怎么导出来？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 407,
+    "text": "就是说你对这个东西，它的它的平衡态就是它的欧拉拉格朗日方程的解，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 408,
+    "text": "它的它的平衡态这个这个以亏的位置。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 409,
+    "text": "就就是这个负的拉普拉斯块，加上一除上这个一除，这个这个f一撇块等于零，这个等于零。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 410,
+    "text": "那么这个就是它的平衡态的一个解。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 411,
+    "text": "假如你这里是是当时一个理理想的情况，是无穷，这里正无穷，那么这个东西就是tangent。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 412,
+    "text": "这个函数，它的这个函数的一个解就是就是tangent这个epsilon tangent这个x除上两倍的这个什么eta大概是这个样子。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 413,
+    "text": "我就那我就把这个方程，我这个方程就我就考虑这个这个，我就考虑这个东西，就是phi t加上这个u乘上gradient phi，我就等于。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 414,
+    "text": "我就等于这个，等于这个东西，就让它是个梯度的。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 415,
+    "text": "我这里当然我要加这个小参数，这里加这里加这个参数，当然这里随便，就是你，因为它的理想状态它是它是它是它是这个等于零，现在我用这种东西去逼近，用用这个东西逼近呢，就是我这个交代要足够小，这个。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 416,
+    "text": "再打一套，就是说这个这个是是代表你这个这个状态要松弛到它这个这个平衡态的这个时间，跟时间跟你这个时间有关的这样的一个一个参数。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 417,
+    "text": "这个东西就是说是是要选，这个这个相场模型呢可以说是一个缺点，就是说有些参数你要调的，所以这是一个参数。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 418,
+    "text": "那，那你这样子做它的好处是什么呢？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 419,
+    "text": "它的好处，因为它这个能量要下降的，是吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 420,
+    "text": "这个能量，对这个梯度流，这个能量要下降。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 421,
+    "text": "这个能量要下降的话，你说我一开始的时候是这种形状。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 422,
+    "text": "它不可能，它不可能变成这种形状。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 423,
+    "text": "这种形状这个这个能量就大了，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 424,
+    "text": "这种形状你看这个，这种形状它这个这里这个这个能量就太大了，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 425,
+    "text": "所以它就不是，它它不可能能量下降下降。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 426,
+    "text": "所以它开始的时候是有一个这个边界层的话，它这个一直走下去，这个边界永远是这个厚度不会变的，就它这个边界永远是有一个边界层。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 427,
+    "text": "所以这是相场模型的这个一个好处，就是说它它这个它这个能够保持能够保持这个这个界面的这个厚度一直不会变，界面的这个厚度一直不会变。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 428,
+    "text": "那么它还有这个好处就是什么？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 429,
+    "text": "就是就是你原来做这个界面追踪的时候，你假如这个两个油滴。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 430,
+    "text": "，两个一定在这里，最终最终它它假如越来越靠近，它一靠的靠的这个时候一接在一起的时候，它就麻烦，它这个方法就走不动了，就就block。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 431,
+    "text": "但是但是你现在，我我用这种东西标注它的话，它这个东西走到一起，然后两个合在一起这个过程，对我来讲没有任何影响。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 432,
+    "text": "我这个过程呢，我只要解这个方程就行了。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 433,
+    "text": "它这个混合在一起没有。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 434,
+    "text": "第二个好处就是说，你假如有拓扑变化的话，这个这个界面会有拓扑变化的话，这个方法它自然而然就处理，没有任何的影响，没有任何的影响。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 435,
+    "text": "所以这是这个相场模型的第二个。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 436,
+    "text": "那么。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 437,
+    "text": "既然我们是这两个东西不能够混合，不能够混合就是说它两个的体积，它两个的体积永远是不变，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 438,
+    "text": "两个体积永远不变的，也就是说我希望有这个这个斐的这个积分呢，它的导数是不变的，它导数应该是等于零，这叫这叫这个volume conservation对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 439,
+    "text": "或者质量守恒，是吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 440,
+    "text": "它这个东西是不变的。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 441,
+    "text": "但是你假如这么去做的话，你假如这么去做的话，你两边一积分，你这个两边一积分，你就推出什么玩意儿？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 442,
+    "text": "你就推出这个积分。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 443,
+    "text": "嗯。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 444,
+    "text": "这个u，这个u是这个流体的速度，所以等号就是u等于零，而且u在边界上也是等，它的法，起码法向是等，所以u有这个性质。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 445,
+    "text": "那你这个一积分，这个u点乘v点三，这个东西一积分，你一分布积分倒过去，分布积分倒过去就变成导多点，它是边角等于零，就是这个这个东西等于零对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 446,
+    "text": "所以这个积分应该等于零，那就但是这个部分积分。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 447,
+    "text": "所以你你最后你得出来的就就推出来这个等于这个负德尔塔这个积分。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 448,
+    "text": "嗯。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 449,
+    "text": "但是这个玩意它积分不等于零，这个东西你看，这个东西等于两项，等于两项，它它这里一般是这个这个有边界条件没问题。，",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 450,
+    "text": "它这个东西，你二阶方程它要满足一个边界条件，边界条件一般都是诺伊曼边界条件，所以。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 451,
+    "text": "所以你对这个东西的话，第一第一部分它的积分为零，因为负拉普拉斯分，你分布积分边界条件它就等于零了，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 452,
+    "text": "所以第一步第一个等于零，但是第二个第二个东西它就不等于零，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 453,
+    "text": "第二个东西它就等于负的。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 454,
+    "text": "奥密克这个f一撇y的积分，f一撇y的积分它没有变，没没有变的等于，对不对？，",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 455,
+    "text": "它不等，所以说这样子做的话，这个东西它的它就是这个。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 456,
+    "text": "质量不守恒，那不守恒，所以这个模型，，这个物理学家不喜欢，材料学家不喜欢，所以你不能够这么搞。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 457,
+    "text": "但是我们知道我们做梯度流，这里面，这里这个算子是随意的，这个算子随意的，你想保持，你要想保持这个这个东西，，这个这个质量守恒的话，所以你你可以做什么？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 458,
+    "text": "你可以，你可以把这个积取成负的拉普拉斯。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 459,
+    "text": "就是说，那个把g取成负的拉普拉斯，就是说你取上一个这个，取上一个这个拉普拉斯，拉，就那个拉普拉斯，取上个拉普拉斯，当然这里就要就有四阶方程了，所以你还得要一个边界条件，还得有个边界条件，也是我们通常的边界条件，对不对？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 460,
+    "text": "也是我们的，就还得要一个边界条件，还有个边界条件就是第一这个。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 461,
+    "text": "就是对它的变分导数，它的这个诺伊曼边界条件也是等于零。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 462,
+    "text": "就是就是所谓的这个我们的这个变分导数就是缪嘛，我们要两个，就是d phi d缪等于零，是吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 463,
+    "text": "所以你还这个东西是等于零。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 464,
+    "text": "那这个时候你你两边一做积分，两边一做分布积分，这个东西等于零。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 465,
+    "text": "那这个东西它现在因为这个边界导数的问题，你一分不积分，最后得出它的这个，它这个发来的这个东西就等于零。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 466,
+    "text": "所以它也可以保持，可以也可以保保保保持量，就是保就是这个这个质量可以保持。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 467,
+    "text": "所以这个模型就是说有，就是通常这个相场相场里面两种模型，一种是这个阿拉卡模型，刚刚讲的阿拉卡模型它不保不保质量。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 468,
+    "text": "这个卡迪亚方程，因为这个卡迪亚方程它就保质量，但是卡迪亚方程解起来麻烦一点，要用四解四阶方程。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 469,
+    "text": "这个阿拉干方程解二阶方程对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 470,
+    "text": "所以，所以这个这个以前那个大家有的这个解不了四阶方程，他就经常用这个二阶方程去去弄，那做的不太好。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 471,
+    "text": "当然也有办法可以控制这件事情，，做的不太好，但是现在我们。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 472,
+    "text": "没没有关系，四阶方程，我昨天跟大家讲，四阶方程可以把它写成两个二阶方程的这个解耦，所以你没有问题，还是这样子的，所以我们就用这个模型，我们用这个四阶方程的这个模型。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 473,
+    "text": "OK，所以这是第一个，这是这个，这是我们要导出来的第一个方程。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 474,
+    "text": "这个我们打开第一个嘛，这个是描述描述这个这个标志函数这个运动的方程。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 475,
+    "text": "那么现在你还要给出这个给出这个速度的方程，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 476,
+    "text": "那速度的方程是什么？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 477,
+    "text": "速度的方程就是我们的NS方程，那么。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 478,
+    "text": "那那次方程是是在在这个单一牛顿体下面导出来，，他没有考虑这个两种流体这个这个性质。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 479,
+    "text": "那现在我们要要考虑这个这个两种的这个性质，那么就是说我们要导一导。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 480,
+    "text": "OK，这是第一个方程，那第二个方程。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 481,
+    "text": "第二个方程是这个流体的质量守恒，或者是这个这个mass conservation，就是不可压条件，这是为零。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 482,
+    "text": "那第三个方程是动量方程，是吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 483,
+    "text": "嗯。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 484,
+    "text": "第三个方程是动量方程，那么最主要的是这个动量，动量方程就是我们的，我们的动量方程昨天是怎么导的？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 485,
+    "text": "这个柔du dt。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 486,
+    "text": "全导数，u，这个东西等于带涡卷是这个套g。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 487,
+    "text": "这个外力我就不写，外力外力一般没有外力，这个外力你要加就加上去，现现在我们假设没有外力，这个机制所有的应力，这个拖到隐藏的法。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 488,
+    "text": "这个在，所以在这个牛顿流，这现在这个东西是什么玩意呢？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 489,
+    "text": "这个东西就是。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 490,
+    "text": "对。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 491,
+    "text": "这是牛顿流体下面的，这是单一牛顿流体下面它的它的这个确实就是就是这个。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 492,
+    "text": "那现在我们有两种流体，它两种流体它就在这个界面上它就有表面张力，，它有这个表面张力，这个表面张力你怎么怎么表示出来，你怎么表示出来，这个都这个表面张力在这个相场模型下面的意义下面可以用这个叫所谓的弹性应力，。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 493,
+    "text": "，elastic stress这个可以可以把它这个这个写出来，所以这个这个是这个表面张力，它是它是写成是是这样一种形式。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 494,
+    "text": "它的表面张力就是跟这个这个这个过程我就不去，我就我就不给大家仔细导了。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 495,
+    "text": "这个表面张力它最后是是可以可以用这个斐。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 496,
+    "text": "可以用这个标志函数，因为因为这个标志函数它就代表这个东西知道了就知道这个界面在哪，是吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 497,
+    "text": "知道界面在哪，那么它表面张力它只是在界面上，只是在界面上这个这。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 498,
+    "text": "这个有有作用，在其他的地方它都没有，所以你看它这里这个只是在这个界面上，在其他的地方归零，y 都等于零，只是在界面上归零 y 等于零，那它这个这个这个表面张力，它就是它就是这个归零 y 这个。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 499,
+    "text": "这这是一个矩阵，这是一个这是一个张量，这是个张量，这个东西这个东西是什么意思呢？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 500,
+    "text": "这个是这个向量，这个规范，这个东西规范，它的这个第i阶的分量就是d i f i乘上d j f i，就是就是就是就是这个意思，它是一个它是一个张量。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 501,
+    "text": "这里大概都都得有些有些长，这里有些长东西，就是这样的。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 502,
+    "text": "那么，那你现在你把它这个，你把它写，你把它写进去，你把它写进去，它这个东西就等于这个。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 503,
+    "text": "嗯。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 504,
+    "text": "这个这个这个这个这个这个是副的。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 505,
+    "text": "所以这个是通过什么最小，，最小虚空原理什么东西导出来？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 506,
+    "text": "你可以，你可以这个，可以严格的从这个这个这个least action principle，这种这种变分形式可以把它导出来。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 507,
+    "text": "所以这个相场模型它是有物理意义，它是可以从物理定理里面导出来的，所以。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 508,
+    "text": "所以和这个和和这个和这个拉普赛特什么东西不一样，就是说他在数学上、物理上都这个物理上物理学家可以接受，就是他是从这个这个物理原理可以导出来。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 509,
+    "text": "那么你现在把它这个算进去，他最后就得出是这个缪。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 510,
+    "text": "对这个东西求导过去的就是拉普拉斯U，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 511,
+    "text": "然后这个东西对它做这个导过去的是就出来是。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 512,
+    "text": "哪怕是在这个拐点的导数也是，导数就是u等于零，所以这条就没有了。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 513,
+    "text": "这个东西求进去就是拐点p，然后减掉这个，这里是不是要给一个常数？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 514,
+    "text": "lambda，我前面用了lambda，前面用伽马来，这个这个常数比较充分，伽马。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 515,
+    "text": "，这里是这个，这里就是拉木达带花的这个规律。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 516,
+    "text": "ok，所以这就是这个动量方程。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 517,
+    "text": "那这三个方程，这三个方程加在一起就是我们就是我们要解的这个方程。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 518,
+    "text": "那还有还有这个就是看你现在这个还得这个密度，密度还得有个方程，这个密度假如我现在先考虑这个先考虑简单情形。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 519,
+    "text": "简单情形，我假设这两种流体的密度是一样的。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 520,
+    "text": "第一种情况，这个这个k，第一个简单情形就是，说明这个ω是很等于这个ω零，那简单情况就取取一了。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 521,
+    "text": "那那这个我们的sust就是就是123。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 522,
+    "text": "这个加上边界条件，所以这个整个的这个这个模型在这个两个在两在这两相流的这个密度是一样的情况，这个密度一样的情况很少，密度一样的情况两相流一般这东西密度都不一样，但是我先先做密度不一样一样，然后再告诉你这个密度不一样应该怎么改。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 523,
+    "text": "好，你们要我这个先先先做这件事情，那么首先这样子做，我得导出一个这个，我得导出一个这个能量不等式来，我要导出一个能量不等式，那么。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 524,
+    "text": "要要导出这个能量等式的话，那么就是我要怎么做呢？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 525,
+    "text": "我要我要对这个东西，我要对什么东西做内积？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 526,
+    "text": "我要对这个东西，我要对这个伽马一伽马二做内积，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 527,
+    "text": "跟跟我们前面做这个，跟我们前面做这个。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 528,
+    "text": "做这个做这个东西一样，要对德尔塔一德尔塔二做累积。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 529,
+    "text": "那这个是好东西，这个出来是也是好的，这个出来就是它对一的导数。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 530,
+    "text": "麻烦的是这一项和这一项，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 531,
+    "text": "这一项和这一项，那对。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 532,
+    "text": "那对这个方程，我当然是要对u做内积，对吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 533,
+    "text": "当然是对u做内积，对u做内积，其他的都没有问题，我出来的是这一项，是吧？",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 534,
+    "text": "这一项，所以这一项和u做内积，和这个和这个做内积。",
+    "language": "zh",
+    "emotion": "neutral"
+  },
+  {
+    "sentence_id": 535,
+    "text": "他们他们的这个，他们的这个东西一定要抵消掉，不抵消掉就麻烦，他们一定要抵消掉，所以他们要怎么抵消掉，那个他们怎么抵消掉，我们明天再说吧。",
+    "language": "zh",
+    "emotion": "neutral"
+  }
+]
