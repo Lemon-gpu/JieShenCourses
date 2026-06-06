@@ -1,3 +1,9 @@
 # ignore `Assets` folder
 Assets/
 
+# ignore `output/Day [number]/Day [number] Fixed.md`
+output/Day 1/Day 1 Fixed.md
+output/Day 2/Day 2 Fixed.md
+output/Day 3/Day 3 Fixed.md
+output/Day 4/Day 4 Fixed.md
+output/Day 5/Day 5 Fixed.md
